@@ -59,7 +59,7 @@ function bootstrap() {
  * @return void
  */
 function check_if_cmb2_exists() : void {
-	if ( is_admin() && current_user_can( 'activate_plugins' ) && ! class_exists( 'CMB2_Bootstrap_2101x' ) ) {
+	if ( is_admin() && current_user_can( 'activate_plugins' ) && ! class_exists( 'CMB2_Bootstrap_2101' ) ) {
 		add_action( 'admin_notices', __NAMESPACE__ . '\\cmb2_required_notice' );
 	}
 }
