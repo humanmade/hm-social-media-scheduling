@@ -1,0 +1,17 @@
+#fb-queue,
+#tw-queue {
+	color: #28a745;
+}
+
+#hm_social_media_data_post_message_twitter_count {
+	color: #28a745;
+}
+
+#hm_social_media_data_post_message_twitter_count.invalid {
+	color: #f00;
+}
+
+#hm_social_media_data_post_message_twitter.invalid:focus {
+	border-color: #f00;
+	box-shadow: 0 0 0 1px #f00;
+}
