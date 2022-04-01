@@ -159,9 +159,9 @@ function facebook_settings() {
 	}
 
 	$app_id  = $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_app_id' ] ?? '';
-	$secret  = $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_app_secret' ] ?? '';
+	$secret  = $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_app_secret' ] ? decrypt( $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_app_secret' ] ) : '';
 	$page_id = $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_page_id' ] ?? '';
-	$token   = $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_access_token' ] ?? '';
+	$token   = $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_access_token' ] ? decrypt( $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_access_token' ] ) : '';
 	$version = $options[ Social_Media_Scheduling\PREFIX_DATA . '_fb_api_version' ] ?? '';
 
 	if ( empty( $app_id ) || empty( $secret ) || empty( $page_id ) || empty( $token ) || empty( $version ) ) {
@@ -190,9 +190,9 @@ function twitter_settings() {
 	}
 
 	$key    = $options[ Social_Media_Scheduling\PREFIX_DATA . '_api_key' ] ?? '';
-	$secret = $options[ Social_Media_Scheduling\PREFIX_DATA . '_api_secret' ] ?? '';
-	$access = $options[ Social_Media_Scheduling\PREFIX_DATA . '_access_token' ] ?? '';
-	$token  = $options[ Social_Media_Scheduling\PREFIX_DATA . '_token_secret' ] ?? '';
+	$secret = $options[ Social_Media_Scheduling\PREFIX_DATA . '_api_secret' ] ? decrypt( $options[ Social_Media_Scheduling\PREFIX_DATA . '_api_secret' ] ) : '';
+	$access = $options[ Social_Media_Scheduling\PREFIX_DATA . '_access_token' ] ? decrypt( $options[ Social_Media_Scheduling\PREFIX_DATA . '_access_token' ] ) : '';
+	$token  = $options[ Social_Media_Scheduling\PREFIX_DATA . '_token_secret' ] ? decrypt( $options[ Social_Media_Scheduling\PREFIX_DATA . '_token_secret' ] ) : '';
 
 	if ( empty( $key ) || empty( $secret ) || empty( $access ) || empty( $token ) ) {
 		return false;

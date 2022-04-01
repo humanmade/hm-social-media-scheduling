@@ -84,8 +84,7 @@ function settings() {
 function validate( CMB2 $cmb, array $args ) {
 	// Whether options were saved and we should be notified.
 	if ( $args['should_notify'] ) {
-		// Decrypt so we can test for emptiness.
-		$key    = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_api_key' )->value );
+		$key = $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_api_key' )->value;
 		$secret = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_api_secret' )->value );
 		$access = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_access_token' )->value );
 		$token  = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_token_secret' )->value );

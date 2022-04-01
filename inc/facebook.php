@@ -82,12 +82,11 @@ function settings() {
 function validate( CMB2 $cmb, array $args ) {
 	// Whether options were saved and we should be notified.
 	if ( $args['should_notify'] ) {
-		// Decrypt so we can test for emptiness.
-		$app_id  = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_fb_app_id' )->value );
+		$app_id  = $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_fb_app_id' )->value;
 		$secret  = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_fb_app_secret' )->value );
-		$page_id = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_fb_page_id' )->value );
+		$page_id = $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_fb_page_id' )->value;
 		$token   = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_fb_access_token' )->value );
-		$version = decrypt( $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_fb_api_version' )->value );
+		$version = $cmb->get_field( Social_Media_Scheduling\PREFIX_DATA . '_fb_api_version' )->value;
 
 		if ( empty( $app_id ) || empty( $secret ) || empty( $page_id ) || empty( $token ) || empty( $version ) ) {
 			$args['message'] = esc_html__( 'Fields can not be empty', 'hm-social-media-scheduling' );
