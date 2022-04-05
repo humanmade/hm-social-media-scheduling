@@ -68,7 +68,7 @@ function settings() {
 		'name'    => esc_html__( 'Graph API Version', 'hm-social-media-scheduling' ),
 		'id'      => Social_Media_Scheduling\PREFIX_DATA . '_fb_api_version',
 		'type'    => 'text',
-		'default' => 'v3.3',
+		'default' => 'v13.0',
 	] );
 }
 
