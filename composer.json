@@ -1,12 +1,12 @@
 {
 	"name": "humanmade/hm-social-media-scheduling",
-    "description": "Human Made Social Media Scheduling",
-    "type": "wordpress-plugin",
+	"description": "Human Made Social Media Scheduling",
+	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
-    "require": {
-        "facebook/graph-sdk": "^5.7",
-		"abraham/twitteroauth": "^1.0"
-    },
+	"require": {
+		"nickdnk/graph-sdk": "^7.0.1",
+		"abraham/twitteroauth": "^4.0.1"
+	},
 	"require-dev": {
 		"humanmade/coding-standards": "0.8.1"
 	}
