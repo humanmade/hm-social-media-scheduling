@@ -4,8 +4,8 @@
     "type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
     "require": {
-        "facebook/graph-sdk": "^5.7",
-		"abraham/twitteroauth": "^1.0"
+        "nickdnk/graph-sdk": "^7.0.1",
+		"abraham/twitteroauth": "^4.0.1"
     },
 	"require-dev": {
 		"humanmade/coding-standards": "0.8.1"
