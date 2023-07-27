@@ -157,11 +157,9 @@ function allow_twitterbot( string $output ) :string {
 		return $output;
 	}
 
-	$output = 'User-agent: Twitterbot
-Disallow:
-
-User-agent: *
-Disallow: /';
+	$output .= 'User-agent: Twitterbot
+Disallow: /
+';
 
 	return $output;
 }
