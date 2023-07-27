@@ -3,7 +3,7 @@
  * Plugin Name:  HM Social Media Scheduling
  * Plugin URI:   https://hmn.md
  * Description:  Makes it possible to schedule social media posts
- * Version:      1.1.0
+ * Version:      1.2.0
  * Author:       Human Made Limited
  * Author URI:   https://hmn.md
  * License:      GPL2
