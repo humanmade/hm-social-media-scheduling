@@ -22,7 +22,11 @@ HM Social Media Scheduling depends on [CMB2 plugin](https://wordpress.org/plugin
 
 ## Changelog
 
-### v1.0.0 
+### v1.1.0
+
+* Fix issue with override robots.txt when blocking Twitter Bot.
+
+### v1.0.0
 
 * Release version 1.0.0 as pre-release testing was successful.
 
